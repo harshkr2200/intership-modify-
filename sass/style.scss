@@ -1,0 +1,109 @@
+@import "_var.scss";
+@import "_mixin.scss";
+@import "_main__mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-size: 62.5%;
+}
+// ############################# NavBar ########################################
+.Navbar {
+  @include main(center);
+  box-shadow: $box__shadow;
+
+  .Navbar__logo a {
+    @include linkslogo(1.6rem, 0.8em, $bg_black, 500);
+  }
+
+  .Navbar__links a {
+    @include linkslogo(1.1rem, 1em, $bg_black, 400);
+    padding-top: 1.7em;
+  }
+
+  .Navbar__links {
+    margin-right: 5em;
+  }
+  .Navbar__links a:hover {
+    color: $bg_red;
+  }
+}
+
+// ################################## main #############################
+
+.Main__container {
+  @include Designer;
+}
+
+.main__text {
+  @include Main_text(0.3em);
+
+  a {
+    text-decoration: none;
+    color: $bg__main;
+    font-weight: 700;
+  }
+}
+
+.Main__loremtext {
+  @include loremtext(1.2rem);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+.btn {
+  @include btn;
+
+  a{
+    text-decoration: none;
+    color: $bg_black;
+  }
+}
+
+// ################################# card ###################################
+
+.card_contanier {
+  @include card;
+
+  .card__section {
+    // border: 2px solid green;
+  }
+
+  .left_card {
+    @include back;
+    padding-left: 1.5em;
+    transition: transform .4s;
+  }
+
+  .left_card:hover{
+    @include hover;
+  }
+
+  .middle_card {
+    @include back;
+    margin: 1em;
+    transition: transform .4s;
+    padding-top: 5em;
+  }
+
+  .middle_card:hover{
+    @include hover;
+  }
+
+  .right_card {
+    @include back;
+    transition: transform .4s;
+  }
+
+  .right_card:hover{
+    @include hover;
+  }
+
+  h4{
+    font-size: 1.5rem;
+  }
+}

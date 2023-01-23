@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #fff;
+  margin-top: 1.5em;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.Navbar .Navbar__logo a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  padding: 0.8em;
+  font-weight: 500;
+  display: inline-block;
+  padding-left: 2em;
+}
+.Navbar .Navbar__links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+  padding: 1em;
+  font-weight: 400;
+  display: inline-block;
+  padding-left: 2em;
+  padding-top: 1.7em;
+}
+.Navbar .Navbar__links {
+  margin-right: 5em;
+}
+.Navbar .Navbar__links a:hover {
+  color: red;
+}
+
+.Main__container {
+  margin-top: 0.5em;
+  margin-left: 0.7em;
+}
+
+.main__text {
+  text-decoration: none;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 0.9em;
+}
+.main__text a {
+  text-decoration: none;
+  color: #ff002e;
+  font-weight: 700;
+}
+
+.Main__loremtext {
+  font-size: 1.2rem;
+  margin: 4.7em 9em;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 0.9em 1.5em;
+  font-size: 1.2rem;
+  background-color: #fff;
+  margin: 0.5em 8.5em;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.card_contanier {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 96%;
+  margin-top: 2em;
+  margin: 3em auto;
+  padding: 1em;
+}
+.card_contanier .left_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32%;
+  padding-left: 1.5em;
+  transition: transform 0.4s;
+}
+.card_contanier .left_card:hover {
+  transform: scale(0.9);
+  color: red;
+}
+.card_contanier .middle_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32%;
+  margin: 1em;
+  transition: transform 0.4s;
+  padding-top: 5em;
+}
+.card_contanier .middle_card:hover {
+  transform: scale(0.9);
+  color: red;
+}
+.card_contanier .right_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32%;
+  transition: transform 0.4s;
+}
+.card_contanier .right_card:hover {
+  transform: scale(0.9);
+  color: red;
+}
+.card_contanier h4 {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
